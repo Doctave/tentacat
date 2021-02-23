@@ -18,8 +18,6 @@ defmodule Tentacat.Repositories.CheckRun do
     get("repos/#{owner}/#{repo}/commits/#{ref}/check-runs", client)
   end
 
-  ref
-
   def list_for_suite(client, owner, repo, check_suite_id) do
     get("repos/#{owner}/#{repo}/check-suites/#{check_suite_id}/check-runs", client)
   end
